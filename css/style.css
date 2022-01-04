@@ -116,12 +116,13 @@ p{
     margin-top: 20px;
     /* box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3); */
 }
-.navigation input:checked .overlay{
+.navigation input:checked ~ .overlay{
+    /* display: block; */
     opacity: 1;
 }
-.header:hover+#overlay{
+/* .header:hover+#overlay{
     opacity: 1;
-}
+} */
 .Request-button{
     background-image: linear-gradient(to right, #31CF6C, #2BB9CF);
     padding: 10px 20px;
@@ -303,6 +304,7 @@ p{
         padding-top: 30px;
         padding-bottom: 30px;
         border-radius: 10px;
+        z-index: 4;
     }
     .menu li{
         width: 100%;
@@ -320,16 +322,21 @@ p{
         background-repeat: no-repeat;
         background-size: 95%;
     }
-    #overlay{
+    .overlay{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.7);
-        top: 0%;
+        top: 30px;
         left: 0;
         bottom: 0;
         right: 0;
-        width: 100%;
-        height: 100%;
+        width: 499px;
+        height: 900px;
+        margin-left: -50px;
+        margin-right: -50px;
+        padding-left: 0;
+        padding-right: 0;
         opacity: 0;
+        z-index: 3;
     }
     .Next-generate{
         margin-right: 600px;
