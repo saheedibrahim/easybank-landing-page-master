@@ -113,16 +113,13 @@ p{
 .navigation input:checked ~ .menu{
     display: block;
     right: 0px;
+    left: 0;
     margin-top: 20px;
     /* box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3); */
 }
 .navigation input:checked ~ .overlay{
-    /* display: block; */
     opacity: 1;
 }
-/* .header:hover+#overlay{
-    opacity: 1;
-} */
 .Request-button{
     background-image: linear-gradient(to right, #31CF6C, #2BB9CF);
     padding: 10px 20px;
@@ -282,8 +279,8 @@ p{
 }
 @media (max-width: 600px){
     .container{
-        padding-left: max(7%);
-        padding-right: max(7%);
+        padding-left: 7%;
+        padding-right: 7%;
     }
     .hamburger, .hamburger:before, .hamburger:after{
         background-color: rgba(0, 0, 0, 0.3);
@@ -298,6 +295,7 @@ p{
         position: absolute;
         background: #ffffff;
         text-align: center;
+        margin: auto;
         top: 40px;
         display: none;
         width: 90%;
@@ -324,17 +322,16 @@ p{
     }
     .overlay{
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(120, 125, 130, 0.1);
+        /* background-color: #BDBDC5; */
         top: 30px;
         left: 0;
         bottom: 0;
         right: 0;
-        width: 499px;
+        width: 115.1%;
         height: 900px;
-        margin-left: -50px;
-        margin-right: -50px;
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: -7%;
+        margin-right: -7%;
         opacity: 0;
         z-index: 3;
     }
