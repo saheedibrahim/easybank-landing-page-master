@@ -133,7 +133,6 @@ p{
 }
 .Next-generation{
     position: relative;
-    /* background-color: #FAFAFA; */
     background-color: rgba(250, 250, 250, 0.3);
     background-image: url("../images/bg-intro-desktop.svg");
     background-position: 200% 90%;
@@ -176,7 +175,6 @@ p{
     padding-bottom: 50px;
 }
 .why-choose-left{
-    /* padding-top: 50px; */
     padding-bottom: 30px;
 }
 .easybank{
@@ -323,8 +321,7 @@ p{
     }
     .overlay{
         position: absolute;
-        /* background-color: rgba(234, 234, 236, 0.7); */
-        background-color: rgba(238, 238, 240, 0.5);
+        background-color: rgba(0, 0, 0, 0.1);
         top: 30px;
         left: 0;
         bottom: 0;
